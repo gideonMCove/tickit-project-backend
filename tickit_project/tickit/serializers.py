@@ -13,7 +13,7 @@ class EventSerializer(serializers.HyperlinkedModelSerializer):
     )
     class Meta:
         model = Event
-        fields = ('id','venue','artist','genre','Date','price','over18','ticket_limit','image_url','venue_id',)
+        fields = ('id','venue','artist','genre','date','price','over18','ticket_limit','image_url','venue_id','comedy','concert','sport',)
 
 
 class VenueSerializer(serializers.HyperlinkedModelSerializer):
